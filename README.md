@@ -40,6 +40,8 @@ Incoming data from the API client is left-justified, data from the server is rig
 
 Filter can be Lua pattern matching or a simple text search.
 
+Open up the debug window for a more copy/paste friendly dump of traffic.
+
 ---
 
 ## Important info
@@ -58,7 +60,7 @@ While this was tested successfully with some AV hardware via TCP and SSH, and so
 
 Filter may not work for some special characters, for example HTML tags.
 
-There is an issue with multiple consecutive spaces and leading/trailing spaces on a message. May be an EzSVG rendering issue.
+There is an issue with multiple consecutive spaces and leading/trailing spaces on a message. May be an EzSVG rendering issue.  Not an issue in the plugin debug window.
 
 ---
 
