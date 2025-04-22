@@ -19,6 +19,7 @@ This is where Protocol Peeper comes into play. It serves as an intermediary betw
 2. Set the TCP port to that of the API server being tested. This will typically be the port AV equipment listens to for control.
 3. Set the Destination IP to that of the API Server. Traffic **received** by Protocol Peeper from the **client** will be forwarded to the server, and vice-versa.
 4. *(Optional)* Set the Destination TCP port. By default, the forwarding destination port will match the above TCP port selected. However, you may modify this by configuring a different TCP port. Since Protocol Peeper binds to all interfaces, this is useful, for example, when both the API server and Protocol Peeper are binding to the loopback interface. This will avoid conflicts in this situation.
+5. Set the destination IP for the plugin/script being tested to a loopback address such as 127.0.0.1.  Any address in the 127.0.0.1 - 127.255.255.254 range should work.  Multiple plugins sending data to the same TCP port on ANY local interface is untested, but may work (example: 127.0.0.1 port 9999 and 127.0.0.2 port 9999).
 
 ---
 
